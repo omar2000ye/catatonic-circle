@@ -1,12 +1,10 @@
-import assert from 'assert';
+import catatonicCircle from '../lib';
 import { should } from 'chai';
-import circle from '../lib';
 
-should(); // Modifies objects prototype to include the 'should' property
+should();
 
 describe('catatonic-circle', function () {
   it('should have a version number!', function () {
-    assert(typeof circle.VERSION !== 'undefined', 'The Project should have a VERSION, whatever the actual version.');
+    catatonicCircle.should.have.property('VERSION');
   });
 });
-
